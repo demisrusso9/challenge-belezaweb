@@ -1,0 +1,31 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 0.8rem;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+
+  .discount {
+    color: hsl(28, 100%, 50%);
+  }
+
+  p {
+    color: #212122;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0.2rem 0;
+    font-family: "Helvetica Neue";
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 650px) {
+  .information {
+    min-width: 250px;
+    margin: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.product {
+  display: grid;
+  padding: 1rem 0;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "images description"
+    "images price";
+
+  box-sizing: border-box;
+
+  border-radius: 3px;
+  border: 1px solid #eee;
+
+  .description {
+    grid-area: description;
+    color: #212122;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    letter-spacing: NaNpx;
+    line-height: 16px;
+    font-weight: 400;
+  }
+
+  .image {
+    grid-area: images;
+    height: 70px;
+    width: 70px;
+  }
+
+  .price {
+    grid-area: price;
+    color: #212122;
+    font-family: "Helvetica Neue";
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: NaNpx;
+    line-height: 17px;
+    text-align: right;
+  }
+}

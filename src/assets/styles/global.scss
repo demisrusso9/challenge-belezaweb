@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica";
+}
+
+html,
+body,
+#root {
+  height: 770px;
+}
+
+body {
+  height: 100%;
+  background-color: #eee;
+}
+
+@font-face {
+  font-family: "Helvetica Neue";
+  src: local("Helvetica Neue"), url("../fonts/HelveticaNeueMediumExtended.ttf"),
+    url("../fonts/HelveticaNeueW0166MediumIt.ttf") format("truetype");
+  font-weight: normal;
+}

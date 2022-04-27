@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 1px 5px 0 rgba(0, 0, 29, 0.22);
+}
+
+.text {
+  font-family: "Helvetica Neue";
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #ccc;
+}
+
+.highlight {
+  color: #ff7800;
+}
+
+@media (min-width: 420px) {
+  header {
+    height: 40px;
+    justify-content: space-evenly;
+  }
+}

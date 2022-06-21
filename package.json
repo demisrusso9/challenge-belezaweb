@@ -3,15 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "axios": "^0.26.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-input-mask": "^3.0.0-alpha.2",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "3.4.4",
+    "react-scripts": "^5.0.1",
     "sass": "^1.50.1",
     "source-map-explorer": "^2.5.2"
   },
@@ -19,8 +16,7 @@
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
-    "coverage": "react-scripts test --coverage --watchAll=false",
+    "test": "jest --watchAll",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -48,9 +44,22 @@
       "last 1 safari version"
     ]
   },
+  "plugins": [
+    {
+      "name": "typescript-plugin-css-modules"
+    }
+  ],
   "devDependencies": {
+    "@types/node": "^17.0.29",
+    "@types/react": "^18.0.8",
+    "@types/react-input-mask": "^3.0.1",
     "husky": "^4.3.0",
     "lint-staged": "^10.4.2",
-    "prettier": "^2.1.2"
-  }
+    "prettier": "^2.1.2",
+    "typescript": "^4.6.3",
+    "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "include": [
+    "./src/**/*.ts"
+  ]
 }

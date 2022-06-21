@@ -18,7 +18,8 @@ body {
 
 @font-face {
   font-family: "Helvetica Neue";
-  src: local("Helvetica Neue"), url("../fonts/HelveticaNeueMediumExtended.ttf"),
-    url("../fonts/HelveticaNeueW0166MediumIt.ttf") format("truetype");
+  src: local("Helvetica Neue"),
+    url("../assets/fonts/HelveticaNeueMediumExtended.ttf"),
+    url("../assets/fonts/HelveticaNeueW0166MediumIt.ttf") format("truetype");
   font-weight: normal;
 }
